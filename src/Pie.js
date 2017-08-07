@@ -11,10 +11,11 @@ import {
 
 const Chart = ({
     data = [],
-    colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042']
+    colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'],
+    height=400
   })=>{
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={height}>
       <PieChart>
         <Pie isAnimationActive={false} data={data} fill="#8884d8">
           {data.map((entry, index) => <Cell key={index} fill={colors[index % colors.length]}/>)}

@@ -15,10 +15,11 @@ const Chart = ({
     data = [],
     colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'],
     lines = [],
-    XAxisKey = 'name'
+    XAxisKey = 'name',
+    height=400
   })=>{
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={height}>
       <AreaChart data={data}
         margin={{top: 5, right: 30, left: 20, bottom: 5}}>
        <XAxis dataKey={XAxisKey} />
