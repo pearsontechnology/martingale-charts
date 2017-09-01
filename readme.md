@@ -22,12 +22,6 @@ yarn test
 yarn compile
 ```
 
-# Components
+# API Documentation
 
-## AreaChart
-
-## LineChart
-
-## BarChart
-
-## PieChart
+See [The docs/readme.md](docs/readme.md) for the API Documentation

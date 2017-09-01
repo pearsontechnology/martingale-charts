@@ -10,7 +10,8 @@
     "test": "jest",
     "compile": "babel src --out-dir lib",
     "pretest": "npm run compile",
-    "prepublish": "npm run test"
+    "prepublish": "npm run test",
+    "doc": "documentation build src/index.js --format md > docs/readme.md"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -23,8 +24,10 @@
     "react-test-renderer": "^15.5.4"
   },
   "dependencies": {
+    "documentation": "^5.2.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "recharts": "^0.22.4"
+    "recharts": "^0.22.4",
+    "yargs": "^8.0.2"
   }
 }

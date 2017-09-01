@@ -11,6 +11,16 @@ import {
   Tooltip
 } from 'recharts';
 
+/**
+ * Generates an Area Chart
+ * @name AreaChart
+ * @param {object} options - Rendering options
+ * @param {array} options.data - Array of Array's of data to render
+ * @param {array} options.colors - The colors for each Area section
+ * @param {array} options.lines - Defines the area section lines to render
+ * @param {string} options.XAxisKey - Name of the member to use as the X Axis Key
+ * @param {number} options.height - Height of the chart in pixels
+ */
 const Chart = ({
     data = [],
     colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'],
