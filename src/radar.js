@@ -3,22 +3,22 @@ import React from 'react';
 import {
   ResponsiveContainer,
   Legend,
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
+  RadarChart,
+  Radar,
+  PolarAngleAxis,
+  PolarRadiusAxis,
+  PolarGrid,
   Tooltip
 } from 'recharts';
 
 /**
- * Generates a Line Chart
+ * Generates a Radar Chart
  * @name LineChart
  * @param {object} options - Rendering options
  * @param {array} options.data - Array of Array's of data to render
  * @param {array} options.colors - The colors for each line
- * @param {array} options.lines - Defines the lines to render
- * @param {string} options.XAxisKey - Name of the member to use as the X Axis Key
+ * @param {array} options.radars - Defines the lines to render
+ * @param {string} options.AxisKey - Name of the member to use as the Axis Key
  * @param {number} options.height - Height of the chart in pixels
  * @param {object} options.margin - Margins associated with the axis and data
  * @param {number} options.margin.top - Top margin
@@ -29,23 +29,23 @@ import {
 const Chart = ({
     data = [],
     colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'],
-    lines = [],
-    XAxisKey = 'name',
+    radars = [],
+    axisKey = 'name',
     height=400,
     margin={top: 5, right: 30, left: 20, bottom: 5}
   })=>{
   return (
     <ResponsiveContainer width="100%" height={height}>
-      <LineChart data={data}
+      <RadarChart data={data}
         margin={margin}>
-        <XAxis dataKey={XAxisKey} />
-       <YAxis/>
-       <CartesianGrid strokeDasharray="3 3"/>
-       <Tooltip/>
-       <Legend />
-       {lines.map((dataKey, index) => <Line isAnimationActive={false} type="monotone" key={dataKey} dataKey={dataKey} stroke={colors[index % colors.length]} />)}
-       </LineChart>
-     </ResponsiveContainer>
+        <PolarGrid/>
+        <Tooltip/>
+        <Legend />
+        <PolarAngleAxis dataKey={axisKey} />
+        <PolarRadiusAxis />
+        {radars.map((dataKey, index) => <Radar isAnimationActive={false} name={dataKey} key={dataKey} dataKey={dataKey} stroke={colors[index % colors.length]} fill={colors[index % colors.length]} fillOpacity={0.6} />)}
+      </RadarChart>
+    </ResponsiveContainer>
   );
 };
 

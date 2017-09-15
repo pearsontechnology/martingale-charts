@@ -2,8 +2,8 @@ import React from 'react';
 
 import {
   ResponsiveContainer,
-  BarChart,
-  Bar,
+  RadialBarChart,
+  RadialBar,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -18,8 +18,8 @@ import {
  * @param {array} options.data - Array of data to render
  * @param {array} options.colors - The colors for each Bar
  * @param {array} options.bars - Defines the bars to render
- * @param {string} options.XAxisKey - Name of the member to use as the X Axis Key
  * @param {number} options.height - Height of the chart in pixels
+ * @param {boolean} options.clockWise - Bars should go clockwise
  * @param {object} options.margin - Margins associated with the axis and data
  * @param {number} options.margin.top - Top margin
  * @param {number} options.margin.left - Left margin
@@ -28,25 +28,28 @@ import {
 */
 
 const Chart = ({
-    data = [],
+    data: rawData = [],
     colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'],
     bars = [],
     XAxisKey = 'name',
     height=400,
-    margin={top: 5, right: 30, left: 20, bottom: 5}
+    margin,
+    clockWise = true
   })=>{
 
+  const data = rawData.map((p, index)=>Object.assign({fill: colors[index % colors.length]}, p));
 	return (
     <ResponsiveContainer width="100%" height={height}>
-    	<BarChart data={data}
-            margin={margin}>
-       <XAxis dataKey={XAxisKey} />
-       <YAxis/>
-       <CartesianGrid strokeDasharray="3 3"/>
+    	<RadialBarChart
+        innerRadius="10%"
+        outerRadius="90%"
+        height={height}
+        data={data}
+        margin={margin}>
        <Tooltip/>
-       <Legend />
-       {bars.map((dataKey, index) => <Bar isAnimationActive={false} key={dataKey} dataKey={dataKey} fill={colors[index % colors.length]} />)}
-      </BarChart>
+       <Legend iconSize={10} width={120} height={140} layout='vertical' verticalAlign='middle' align="right" />
+       {bars.map((dataKey, index) => <RadialBar minAngle={15} startAngle={90} endAngle={-270} isAnimationActive={false} key={dataKey} dataKey={dataKey} label background clockWise={clockWise}/>)}
+      </RadialBarChart>
     </ResponsiveContainer>
   );
 };

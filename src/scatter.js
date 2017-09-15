@@ -31,6 +31,11 @@ import {
  * @param {string} options.ZAxisScale - How to scale the Z axis values
  * @param {array} options.ZAxisRange - Array of [min, max] size in pixels to render points
  * @param {number} options.height - Height of the chart in pixels
+ * @param {object} options.margin - Margins associated with the axis and data
+ * @param {number} options.margin.top - Top margin
+ * @param {number} options.margin.left - Left margin
+ * @param {number} options.margin.bottom - Bottom margin
+ * @param {number} options.margin.right - Right margin
  */
 
 const Chart = ({
@@ -48,12 +53,13 @@ const Chart = ({
     ZAxisUnit = '',
     ZAxisScale= 'auto',
     ZAxisRange= [10, 100],
-    height=400
+    height=400,
+    margin={top: 5, right: 30, left: 20, bottom: 5}
   })=>{
   return (
     <ResponsiveContainer width="100%" height={height}>
       <ScatterChart data={data}
-        margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+        margin={margin}>
          <XAxis dataKey={XAxisKey} name={XAxisTitle || XAxisKey} unit={XAxisUnit} />
          <YAxis dataKey={YAxisKey} name={YAxisTitle || YAxisKey} unit={YAxisUnit} />
          <ZAxis scale={ZAxisScale} dataKey={ZAxisKey} range={ZAxisRange} name={ZAxisTitle || ZAxisKey} unit={ZAxisUnit} />
