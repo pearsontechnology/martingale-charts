@@ -28,6 +28,7 @@
   "dependencies": {
     "kind-of": "^5.0.2",
     "output-file-sync": "^2.0.0",
+    "pleasejs": "^0.4.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "recharts": "^0.22.4"
