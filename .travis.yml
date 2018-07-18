@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  "8"
+  "10"
+deploy:
+  provider: npm
+  email: jeremy.darling@gmail.com
+  api_key:
+    secure: lkzSQHUvmIRg/GkhGl/8ddS7zdEHBUlfFnijvf0de/L/PGum1ijznNMa2gTl/xOWTNulogIaGWeUF5cds0fvhrMYRChMtp6UUqhAXjKbgDPtESp8rP8ZkwOBryM7zd1/q+N6hw6+GU7zow45PhDwj/xA8/yBH60mrB+XMMQupq7+kfDEvnrv5wbdRbY+YjsFMQbiZCzS4MwaBHy0JH1OqogS9rt3g3SCdnOYWosK8SR6HU9NfBDZs7usEWXABFcK5t/Xobngxp3FRxwmlz3XQcQ4RtMQc2A5gJVUGAxWQu78n/3jdPjKJ86I5knCfcL+CvgJSF4NkGNY3zWgrjCly1fMxF4/7rpU/Z7WC7RCXO9hsv+m90IWSNDb/YFqXu6IEGPOmyVLbaPZDwesud5DpnW1DT4wJA3AKOKynKoUlMi3ggpdfIRlVVur5cHqMlbyE4Gyne4qTaEdcEaNyfY03KpBAFzvMzEzoOxbP8mpK3JGAe6qT9778PiC0tiIx9CcctpCa0aN8B9aoQOHTyPcLjQ/U+/xiie2EaZYElntryG19he5i+X6AxjASjBvIRYrM2g7FBiC4O4wScm5g0GkZBhj5RCnF38aCJd5XwqPYwwHXCvBigwTFQi1VzEfCPha7mUcfESjV/uMBhwEUJQXRgAIrLLVwrH7zgx+BVfQ9Bo=
+  on:
+    tags: true
+    repo: pearsontechnology/martingale-charts
