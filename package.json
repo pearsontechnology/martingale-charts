@@ -1,5 +1,5 @@
 {
-  "name": "martingale-charts",
+  "name": "@martingale/charts",
   "version": "0.0.1",
   "description": "Provides Area, Bar, Line, and Pie charts to Martingale UI",
   "main": "index.js",
