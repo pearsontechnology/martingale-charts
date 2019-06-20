@@ -2,14 +2,14 @@
 
 ### Table of Contents
 
--   [AreaChart](#areachart)
--   [LineChart](#linechart)
--   [LineChart](#linechart-1)
--   [LineChart](#linechart-2)
--   [BarChart](#barchart)
--   [BarChart](#barchart-1)
--   [PieChart](#piechart)
--   [ScatterChart](#scatterchart)
+-   [AreaChart][1]
+-   [LineChart][2]
+-   [LineChart][3]
+-   [LineChart][4]
+-   [BarChart][5]
+-   [BarChart][6]
+-   [PieChart][7]
+-   [ScatterChart][8]
 
 ## AreaChart
 
@@ -17,17 +17,17 @@ Generates an Area Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of Array's of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each Area section
-    -   `options.lines` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the area section lines to render
-    -   `options.XAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the X Axis Key
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of Array's of data to render
+    -   `options.colors` **[array][10]** The colors for each Area section
+    -   `options.lines` **[array][10]** Defines the area section lines to render
+    -   `options.XAxisKey` **[string][11]** Name of the member to use as the X Axis Key
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
 
 ## LineChart
 
@@ -35,17 +35,17 @@ Generates a Line Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of Array's of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each line
-    -   `options.lines` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the lines to render
-    -   `options.XAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the X Axis Key
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of Array's of data to render
+    -   `options.colors` **[array][10]** The colors for each line
+    -   `options.lines` **[array][10]** Defines the lines to render
+    -   `options.XAxisKey` **[string][11]** Name of the member to use as the X Axis Key
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
 
 ## LineChart
 
@@ -53,19 +53,19 @@ Generates a Composed (Line, Bar, Area) Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of Array's of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each line
-    -   `options.areas` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the areas to render
-    -   `options.bars` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the bars to render
-    -   `options.lines` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the lines to render
-    -   `options.XAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the X Axis Key
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of Array's of data to render
+    -   `options.colors` **[array][10]** The colors for each line
+    -   `options.areas` **[array][10]** Defines the areas to render
+    -   `options.bars` **[array][10]** Defines the bars to render
+    -   `options.lines` **[array][10]** Defines the lines to render
+    -   `options.XAxisKey` **[string][11]** Name of the member to use as the X Axis Key
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
 
 ## LineChart
 
@@ -73,17 +73,17 @@ Generates a Radar Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of Array's of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each line
-    -   `options.radars` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the lines to render
-    -   `options.AxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the Axis Key
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of Array's of data to render
+    -   `options.colors` **[array][10]** The colors for each line
+    -   `options.radars` **[array][10]** Defines the lines to render
+    -   `options.AxisKey` **[string][11]** Name of the member to use as the Axis Key
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
 
 ## BarChart
 
@@ -91,17 +91,17 @@ Generates a Bar Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each Bar
-    -   `options.bars` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the bars to render
-    -   `options.XAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the X Axis Key
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of data to render
+    -   `options.colors` **[array][10]** The colors for each Bar
+    -   `options.bars` **[array][10]** Defines the bars to render
+    -   `options.XAxisKey` **[string][11]** Name of the member to use as the X Axis Key
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
 
 ## BarChart
 
@@ -109,17 +109,17 @@ Generates a Bar Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each Bar
-    -   `options.bars` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the bars to render
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.clockWise` **[boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)** Bars should go clockwise
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of data to render
+    -   `options.colors` **[array][10]** The colors for each Bar
+    -   `options.bars` **[array][10]** Defines the bars to render
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.clockWise` **[boolean][13]** Bars should go clockwise
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
 
 ## PieChart
 
@@ -127,10 +127,10 @@ Generates an Pie Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each Pie section
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of data to render
+    -   `options.colors` **[array][10]** The colors for each Pie section
+    -   `options.height` **[number][12]** Height of the chart in pixels
 
 ## ScatterChart
 
@@ -138,24 +138,50 @@ Generates a Scatter Chart
 
 **Parameters**
 
--   `options` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Rendering options
-    -   `options.data` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of Array's of data to render
-    -   `options.colors` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** The colors for each dot
-    -   `options.scatters` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Defines the scatter groups to render
-    -   `options.XAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the X Axis Key
-    -   `options.YAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the Y Axis Key
-    -   `options.ZAxisKey` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Name of the member to use as the Z Axis Key (size)
-    -   `options.XAxisTitle` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Title of the X Axis
-    -   `options.YAxisTitle` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Title of the Y Axis
-    -   `options.ZAxisTitle` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Title of the Z Axis
-    -   `options.XAxisUnit` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Unit of the X Axis
-    -   `options.YAxisUnit` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Unit of the Y Axis
-    -   `options.ZAxisUnit` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** Unit of the Z Axis
-    -   `options.ZAxisScale` **[string](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** How to scale the Z axis values
-    -   `options.ZAxisRange` **[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)** Array of [min, max] size in pixels to render points
-    -   `options.height` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Height of the chart in pixels
-    -   `options.margin` **[object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** Margins associated with the axis and data
-        -   `options.margin.top` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Top margin
-        -   `options.margin.left` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Left margin
-        -   `options.margin.bottom` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Bottom margin
-        -   `options.margin.right` **[number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** Right margin
+-   `options` **[object][9]** Rendering options
+    -   `options.data` **[array][10]** Array of Array's of data to render
+    -   `options.colors` **[array][10]** The colors for each dot
+    -   `options.scatters` **[array][10]** Defines the scatter groups to render
+    -   `options.XAxisKey` **[string][11]** Name of the member to use as the X Axis Key
+    -   `options.YAxisKey` **[string][11]** Name of the member to use as the Y Axis Key
+    -   `options.ZAxisKey` **[string][11]** Name of the member to use as the Z Axis Key (size)
+    -   `options.XAxisTitle` **[string][11]** Title of the X Axis
+    -   `options.YAxisTitle` **[string][11]** Title of the Y Axis
+    -   `options.ZAxisTitle` **[string][11]** Title of the Z Axis
+    -   `options.XAxisUnit` **[string][11]** Unit of the X Axis
+    -   `options.YAxisUnit` **[string][11]** Unit of the Y Axis
+    -   `options.ZAxisUnit` **[string][11]** Unit of the Z Axis
+    -   `options.ZAxisScale` **[string][11]** How to scale the Z axis values
+    -   `options.ZAxisRange` **[array][10]** Array of [min, max] size in pixels to render points
+    -   `options.height` **[number][12]** Height of the chart in pixels
+    -   `options.margin` **[object][9]** Margins associated with the axis and data
+        -   `options.margin.top` **[number][12]** Top margin
+        -   `options.margin.left` **[number][12]** Left margin
+        -   `options.margin.bottom` **[number][12]** Bottom margin
+        -   `options.margin.right` **[number][12]** Right margin
+
+[1]: #areachart
+
+[2]: #linechart
+
+[3]: #linechart-1
+
+[4]: #linechart-2
+
+[5]: #barchart
+
+[6]: #barchart-1
+
+[7]: #piechart
+
+[8]: #scatterchart
+
+[9]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+[10]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+[11]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[12]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+[13]: https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean
